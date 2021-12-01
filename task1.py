@@ -9,31 +9,19 @@ Example:
 assert find('apple') == 0
 assert find('fish') == 5
 '''
-input1 = str(input("input: "))
-def mayonaise(a):
-    x = len(a)
-    if x == 0:
-        return "no bueno"
-    if x > 1:
-        mayo = (x + " stocks have that symbol")
-        return mayo
-    if x == 1:
-        return a
 
-def find(needle):
-    pyf1 = "task02.csv"
+def find(a):
+    filename = "task02.csv"
     list1 = []
     count = 0 
-    for haystack in pyf1:
-        if needle in haystack:
-            x = haystack.strip()
-            data = x.split(" ")
+    for i in filename:
+        if a in i:
+            x = i.strip()
+            data = x.split(",")
             list1.append(data)
             count + count + 1
-    mayonaise(list1)
+    return count
 
-find(input1)
-            
 
 
 
