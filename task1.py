@@ -10,6 +10,7 @@ assert find('apple') == 0
 assert find('fish') == 5
 '''
 
+
 def find(a):
     filename = "task02.csv"
     list1 = []
@@ -23,9 +24,12 @@ def find(a):
     return count
 
 
-
-
-
 if __name__ == "__main__":
     assert find('apple') == 0
     assert find('fish') == 5
+
+
+
+
+
+
